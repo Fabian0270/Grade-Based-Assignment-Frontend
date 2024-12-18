@@ -7,7 +7,47 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#" id="home-link">Home</a></li>
+          <li><a href="#" id="search-link">Search</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hemsidans innehåll -->
+      <section id="home" class="active">
+        <div id="cocktail-display">
+          <h1>Random Cocktail</h1>
+          <img id="cocktail-image" alt="Cocktail Image" />
+          <p id="cocktail-name"></p>
+          <button id="new-cocktail">Get a New Cocktail</button>
+          <button id="see-more">See More</button>
+        </div>
+      </section>
+      
+      <!-- Sök-delen -->
+      <section id="search" class="hidden">
+        <h1>Search Cocktails</h1>
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Enter cocktail name" />
+          <button type="submit">Search</button>
+        </form>
+        <ul id="search-results"></ul>
+      </section>
+      
+      <!-- Detaljer -->
+      <section id="detail" class="hidden">
+        <h1 id="detail-name"></h1>
+        <img id="detail-image" alt="Cocktail Image" />
+        <p id="category"></p>
+        <p id="tags"></p>
+        <p id="instructions"></p>
+        <ul id="ingredients"></ul>
+        <p id="glass"></p>
+      </section>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
